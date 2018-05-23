@@ -1,13 +1,13 @@
 "use strict"
 //合约地址
-var dappAddress = "n22E6rwJnBBKj6odaTmUWDTv4jbtUScNvJX";
+var dappAddress = "n1oH8ZpaKcu67NV1ac8BspJMw5boFqzafM5";
 
 //here we use neb.js to call the "get" function to search from the Dictionary
 var nebulas = require("nebulas"),
     Account = nebulas.Account,
     neb = new nebulas.Neb();
 //合约所在的链，这里指的是testnet
-neb.setRequest(new nebulas.HttpRequest("https://testnet.nebulas.io"));
+neb.setRequest(new nebulas.HttpRequest("https://mainnet.nebulas.io"));
 var NebPay = require("nebpay");     //https://github.com/nebulasio/nebPay
 var nebPay = new NebPay();
 
